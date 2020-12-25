@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node script/populate.js && next dev",
+    "build": "node script/populate.js && next build",
+    "start": "node script/populate.js && next start"
   },
   "dependencies": {
     "next": "10.0.4",
